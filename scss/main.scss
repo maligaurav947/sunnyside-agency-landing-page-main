@@ -40,7 +40,7 @@ header {
 
 //main
 .main {
-  font-size: 3.5rem;
+  font-size: $primary-font-size;
 
   color: $White;
   .title {
@@ -64,7 +64,7 @@ header {
   .div-title {
     padding: 0.5em 0;
     font-family: $secoundary-font;
-    font-size: 3.5rem;
+    font-size: $primary-font-size;
   }
 
   .div-btn {
@@ -79,7 +79,7 @@ header {
   color: $grayish-blue;
   padding: 0.8em 0;
   font-family: $primary-font;
-  font-size: 1.5rem;
+  font-size: $info-font-size;
   font-weight: 400;
 }
 .left-img {
@@ -89,7 +89,7 @@ header {
 h4 {
   text-transform: capitalize;
   font-family: $secoundary-font;
-  font-size: 3.5rem;
+  font-size: $primary-font-size;
   padding: 0.5em 0.8em;
   display: flex;
   justify-content: center;
@@ -97,7 +97,7 @@ h4 {
 }
 p {
   font-family: $primary-font;
-  font-size: 1.5rem;
+  font-size: $info-font-size;
   padding: 1em 2.5em 1.5rem;
   text-align: center;
   display: flex;
@@ -150,6 +150,7 @@ p {
       .div-info {
         color: $grayish-blue-dark;
         padding: 1.5em 0.5em;
+        text-align: center;
       }
     }
     .card-3 {
@@ -164,9 +165,10 @@ p {
     }
     h3 {
       font-family: $secoundary-font;
-      font-size: 2.5rem;
+      font-size: $name-font-size;
     }
     p {
+      font-size: $info-font-size;
       color: $grayish-blue-dark;
       font-family: $primary-font;
     }
@@ -193,7 +195,7 @@ footer {
   .footer-title {
     padding: 1.5em 0 1em;
     font-family: $primary-font;
-    font-size: 3.5rem;
+    font-size: $primary-font-size;
   }
   .footer-menu {
     display: flex;
@@ -231,14 +233,20 @@ footer {
         padding: 0 2.5rem;
         a {
           color: white;
-          font-size: 2rem;
+          font-size: $name-font-size;
           font-family: $primary-font;
         }
         .nav-btn {
+          cursor: pointer;
           border: black;
-          background-color: #8dd4c6;
-          padding: 0.5em 1.5em;
+          background-color: #1c5247;
+transition: all ease-out 0.5s;
+          padding: 0.8em 1.5em;
           border-radius: 25px;
+          &:hover{
+            background-color: #8dd4c6;
+          }
+
         }
       }
     }
@@ -260,71 +268,69 @@ footer {
     width: 50%;
   }
 
-  .imges{
+  .imges {
     display: flex;
-    .left-img{
+    .left-img {
       width: 50%;
-      h4,p{
+      h4,
+      p {
         height: 150px;
       }
     }
-    .right-img{
+    .right-img {
       width: 50%;
-      h4,p{
+      h4,
+      p {
         height: 150px;
       }
     }
   }
 
-  .testimonials{
-  .testimonial-card{
-    display: flex;
-    padding: 1.5em 5em;
-    flex-direction: row;
-    .card-1{
-      
-      margin: 0;
-      padding: 0;
-      border: none;
-      box-shadow: none;
-    }
-    .card-2{
-      
-      margin: 0;
-      padding: 0;
-      border: none;
-      box-shadow: none;
-    }
-    .card-3{
-      
-      margin: 0;
-      padding: 0;
-      border: none;
-      box-shadow: none;
-    }
-  }
-  }
-footer{
-  
-  text-align: center;
-  .footer-title{
-    font-size: 4.5rem;
-  }
-  .footer-menu{
-    li{
-      a{
-        font-size: 2rem;
+  .testimonials {
+    .testimonial-card {
+      display: flex;
+      padding: 1.5em 5em;
+      flex-direction: row;
+      .card-1 {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+      }
+      .card-2 {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+      }
+      .card-3 {
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-shadow: none;
       }
     }
   }
-  .footer-icon{
-    li{
-      a{
-        i{
-          font-size: 2rem;
+  footer {
+    text-align: center;
+    .footer-title {
+      font-size: $primary-font-size;
+    }
+    .footer-menu {
+      li {
+        a {
+          font-size: $name-font-size;
+        }
+      }
+    }
+    .footer-icon {
+      li {
+        a {
+          i {
+            font-size: $name-font-size;
+          }
         }
       }
     }
   }
-}
 }
