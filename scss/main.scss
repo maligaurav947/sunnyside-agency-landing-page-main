@@ -177,7 +177,7 @@ p {
     width: 50%;
     display: flex;
   }
-  .img-gallery-2 {    
+  .img-gallery-2 {
     width: 50%;
     display: flex;
   }
@@ -215,4 +215,116 @@ footer {
       }
     }
   }
+}
+@media screen and (min-width: 756px) {
+  main {
+    height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/maligaurav947/sunnyside-agency-landing-page-main/master/images/desktop/image-header.jpg);
+  }
+  .nav-menu {
+    justify-content: space-between;
+    display: flex;
+    .nav-links {
+      align-items: center;
+      display: flex;
+      li {
+        padding: 0 2.5rem;
+        a {
+          color: white;
+          font-size: 2rem;
+          font-family: $primary-font;
+        }
+        .nav-btn {
+          border: black;
+          background-color: #8dd4c6;
+          padding: 0.5em 1.5em;
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+  .brand {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .stand {
+    display: flex;
+    align-items: center;
+  }
+  .section-div-text {
+    margin: 0;
+    width: 50%;
+  }
+  .section-div-img {
+    width: 50%;
+  }
+
+  .imges{
+    display: flex;
+    .left-img{
+      width: 50%;
+      h4,p{
+        height: 150px;
+      }
+    }
+    .right-img{
+      width: 50%;
+      h4,p{
+        height: 150px;
+      }
+    }
+  }
+
+  .testimonials{
+  .testimonial-card{
+    display: flex;
+    padding: 1.5em 5em;
+    flex-direction: row;
+    .card-1{
+      
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+    .card-2{
+      
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+    .card-3{
+      
+      margin: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  }
+footer{
+  
+  text-align: center;
+  .footer-title{
+    font-size: 4.5rem;
+  }
+  .footer-menu{
+    li{
+      a{
+        font-size: 2rem;
+      }
+    }
+  }
+  .footer-icon{
+    li{
+      a{
+        i{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
 }
